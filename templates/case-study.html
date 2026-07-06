@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{CASE_STUDY_DESCRIPTION}}">
+  <meta name="theme-color" content="#151714">
+  <title>{{CASE_STUDY_TITLE}} | Case Study | Misha Slipych</title>
+  <link rel="canonical" href="https://mishaslipych.com/case-studies/{{CASE_STUDY_SLUG}}.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "{{CASE_STUDY_TITLE}}",
+        "description": "{{CASE_STUDY_DESCRIPTION}}",
+        "datePublished": "{{YYYY-MM-DD}}",
+        "dateModified": "{{YYYY-MM-DD}}",
+        "author": { "@type": "Person", "name": "Misha Slipych", "url": "https://mishaslipych.com/" },
+        "mainEntity": {
+          "@type": "Project",
+          "name": "{{PROJECT_TITLE}}",
+          "description": "{{PROJECT_DESCRIPTION}}",
+          "founder": { "@type": "Person", "name": "Misha Slipych" }
+        },
+        "mainEntityOfPage": "https://mishaslipych.com/case-studies/{{CASE_STUDY_SLUG}}.html",
+        "image": "https://mishaslipych.com/assets/{{CASE_STUDY_IMAGE}}"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mishaslipych.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://mishaslipych.com/#case-studies" },
+          { "@type": "ListItem", "position": 3, "name": "{{CASE_STUDY_TITLE}}", "item": "https://mishaslipych.com/case-studies/{{CASE_STUDY_SLUG}}.html" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="dark">
+  <header class="site-header"><a class="brand" href="../index.html#home"><span>MS</span><strong>Misha Slipych</strong></a></header>
+  <main><article class="page active-page"><div class="contact-wrap"><p class="eyebrow"><span></span> Case Study · {{PROJECT_CATEGORY}}</p><h1>{{CASE_STUDY_TITLE}}</h1><p class="lede">{{CASE_STUDY_DESCRIPTION}}</p><div>{{CASE_STUDY_BODY}}</div></div></article></main>
+</body>
+</html>

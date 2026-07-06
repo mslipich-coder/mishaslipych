@@ -3,19 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Misha Slipych — Material Handling Engineer specializing in CAD automation, technical visualization, and engineering tools.">
+  <meta name="description" content="Material Handling Engineer specializing in warehouse systems, CAD automation, technical visualization, and engineering tools.">
   <meta name="theme-color" content="#151714">
   <meta name="color-scheme" content="light dark">
-  <meta property="og:title" content="Misha Slipych — Engineering Portfolio">
-  <meta property="og:description" content="Material handling engineering, CAD automation, technical visualization, and engineering tools.">
+  <meta property="og:title" content="Misha Slipych | Material Handling Engineer | CAD Automation &amp; Technical Visualization">
+  <meta property="og:description" content="Material Handling Engineer specializing in warehouse systems, CAD automation, technical visualization, and engineering tools.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mishaslipych.com/">
-  <title>Misha Slipych — Material Handling Engineer</title>
+  <meta property="og:site_name" content="Misha Slipych">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://mishaslipych.com/assets/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Dark industrial pallet racking with CAD construction lines">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Misha Slipych | Material Handling Engineer | CAD Automation &amp; Technical Visualization">
+  <meta name="twitter:description" content="Material Handling Engineer specializing in warehouse systems, CAD automation, technical visualization, and engineering tools.">
+  <meta name="twitter:image" content="https://mishaslipych.com/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Dark industrial pallet racking with CAD construction lines">
+  <title>Misha Slipych | Material Handling Engineer | CAD Automation &amp; Technical Visualization</title>
   <link rel="canonical" href="https://mishaslipych.com/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Manrope:wght@500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://mishaslipych.com/#person",
+        "name": "Misha Slipych",
+        "url": "https://mishaslipych.com/",
+        "email": "mailto:hello@mishaslipych.com",
+        "jobTitle": "Material Handling Engineer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kyiv",
+          "addressCountry": "UA"
+        },
+        "sameAs": ["https://linkedin.com/in/mishaslipych"],
+        "knowsAbout": [
+          "Material handling",
+          "Warehouse racking engineering",
+          "CAD automation",
+          "Technical visualization",
+          "Engineering tools",
+          "Product animation",
+          "Assembly documentation"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://mishaslipych.com/#website",
+        "url": "https://mishaslipych.com/",
+        "name": "Misha Slipych — Engineering Portfolio",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://mishaslipych.com/#person" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://mishaslipych.com/#webpage",
+        "url": "https://mishaslipych.com/",
+        "name": "Misha Slipych | Material Handling Engineer | CAD Automation & Technical Visualization",
+        "isPartOf": { "@id": "https://mishaslipych.com/#website" },
+        "about": { "@id": "https://mishaslipych.com/#person" },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://mishaslipych.com/"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
   <script defer src="script.js"></script>
 </head>
 <body class="dark single-page">
@@ -30,36 +100,51 @@
       <div class="hero-copy reveal">
         <p class="eyebrow"><span></span> Material Handling Engineer · Kyiv, Ukraine</p>
         <h1 id="hero-title">Engineering.<br><em>Visualization.</em><br>Automation.</h1>
-        <p class="lede">Material Handling Engineer specializing in CAD automation, technical visualization, and engineering tools.</p>
+        <p class="lede">Material Handling Engineer creating warehouse systems, engineering tools, technical visualizations, and automation workflows.</p>
         <div class="role-list"><span>Material Handling Engineering</span><span>CAD Automation</span><span>Technical Visualization</span><span>Engineering Tools</span></div>
         <div class="button-row"><a class="button primary" href="#portfolio">Explore portfolio <b>↓</b></a><a class="text-link" href="#contact">Get in touch <b>→</b></a></div>
       </div>
-      <div class="hero-visual reveal"><img src="assets/hero-facility.png" alt="Industrial material handling system with conveyors and automated equipment"><div class="discipline-card"><span>FOCUS</span><strong>CAD + Flow</strong><p>from engineering logic to clear communication</p></div><div class="image-tag">Material handling systems</div></div>
+      <div class="hero-visual reveal"><img id="hero-media" src="assets/hero-facility.png" alt="Industrial material handling system with conveyors and automated equipment"><div class="discipline-card"><span>FOCUS</span><strong>CAD + Flow</strong><p>from engineering logic to clear communication</p></div><div class="image-tag">Material handling systems</div></div>
       <div class="hero-foot"><span>Scroll to inspect</span><div class="scroll-line"></div><span>Engineering portfolio</span></div>
     </section>
 
+    <section class="metrics-section" aria-label="Engineering experience">
+      <div class="metrics-grid reveal"><div><strong>15+</strong><span>Years in material handling</span></div><div><strong>1000+</strong><span>Racking layouts delivered</span></div><div><strong>20+</strong><span>Product animation projects</span></div><div><strong>4+</strong><span>Engineering tools in development</span></div></div>
+    </section>
+
     <section id="portfolio" class="page portfolio-section" aria-labelledby="portfolio-title">
-      <div class="section-head reveal"><p class="eyebrow"><span></span> Portfolio</p><h2 id="portfolio-title">Selected<br><em>engineering work.</em></h2><div class="section-intro"><p>Five areas of work at the intersection of material handling, visualization, and automation.</p></div></div>
-      <div class="portfolio-categories">
-        <article class="portfolio-category reveal" data-project-slug="interactive-engineering-tools"><header><span>01</span><div><p>Category</p><h3>Interactive Engineering Tools</h3></div></header><div class="category-card"><div class="category-thumbnail thumbnail-grid"><i>3D</i><small>THUMBNAIL</small></div><div><p>PROJECT PLACEHOLDER</p><h4>Engineering configurator</h4><span>Future case study page</span></div><b>↗</b></div></article>
-        <article class="portfolio-category reveal" data-project-slug="cad-automation"><header><span>02</span><div><p>Category</p><h3>CAD Automation</h3></div></header><div class="category-card"><div class="category-thumbnail thumbnail-cad"><i>CAD</i><small>THUMBNAIL</small></div><div><p>PROJECT PLACEHOLDER</p><h4>Automated CAD workflow</h4><span>Future case study page</span></div><b>↗</b></div></article>
-        <article class="portfolio-category reveal" data-project-slug="technical-visualization"><header><span>03</span><div><p>Category</p><h3>Technical Visualization</h3></div></header><div class="category-card"><div class="category-thumbnail thumbnail-visual"><i>◇</i><small>THUMBNAIL</small></div><div><p>PROJECT PLACEHOLDER</p><h4>Warehouse system visualization</h4><span>Future case study page</span></div><b>↗</b></div></article>
-        <article class="portfolio-category reveal" data-project-slug="product-animations"><header><span>04</span><div><p>Category</p><h3>Product Animations</h3></div></header><div class="category-card"><div class="category-thumbnail thumbnail-motion"><i>▶</i><small>THUMBNAIL</small></div><div><p>PROJECT PLACEHOLDER</p><h4>Product motion study</h4><span>Future case study page</span></div><b>↗</b></div></article>
-        <article class="portfolio-category reveal" data-project-slug="assembly-documentation"><header><span>05</span><div><p>Category</p><h3>Assembly Documentation</h3></div></header><div class="category-card"><div class="category-thumbnail thumbnail-docs"><i>≡</i><small>THUMBNAIL</small></div><div><p>PROJECT PLACEHOLDER</p><h4>Assembly instruction system</h4><span>Future case study page</span></div><b>↗</b></div></article>
+      <div class="section-head reveal"><p class="eyebrow"><span></span> Featured projects</p><h2 id="portfolio-title">Engineering work,<br><em>made tangible.</em></h2><div class="section-intro"><p>Selected tools, visual systems, and documentation workflows grounded in material handling engineering.</p></div></div>
+      <div class="featured-projects">
+        <article class="featured-project reveal" data-project-slug="pallet-rack-builder"><div class="project-visual thumbnail-grid"><i>3D</i><small>PROJECT VISUAL IN PREPARATION</small></div><div class="project-body"><div class="project-meta"><span>Interactive Engineering Tool</span><b>Active development</b></div><h3>Pallet Rack Builder</h3><p>Browser-based configurator for planning pallet rack layouts with engineering constraints, multi-row arrangements, PDF output, and AR support.</p><div class="technology-list"><span>Browser 3D</span><span>Engineering constraints</span><span>PDF export</span><span>AR</span></div><div class="case-study-state">Case study in preparation <b>↗</b></div></div></article>
+        <article class="featured-project reveal" data-project-slug="rack-sign-generator"><div class="project-visual thumbnail-cad"><i>CAD</i><small>PROJECT VISUAL IN PREPARATION</small></div><div class="project-body"><div class="project-meta"><span>CAD Automation</span><b>Working tool</b></div><h3>Rack Sign Generator</h3><p>Structured workflow for producing rack signage and load-capacity documents from engineering data.</p><div class="technology-list"><span>CAD automation</span><span>Engineering data</span><span>Document generation</span></div><div class="case-study-state">Case study in preparation <b>↗</b></div></div></article>
+        <article class="featured-project reveal" data-project-slug="product-animation-pipeline"><div class="project-visual thumbnail-motion"><i>▶</i><small>PROJECT VISUAL IN PREPARATION</small></div><div class="project-body"><div class="project-meta"><span>Technical Visualization</span><b>Production workflow</b></div><h3>Product Animation Pipeline</h3><p>Repeatable process for turning engineering models into clear product animations for configuration, assembly, and product communication.</p><div class="technology-list"><span>3D rendering</span><span>Motion design</span><span>Engineering models</span><span>Compositing</span></div><div class="case-study-state">Case study in preparation <b>↗</b></div></div></article>
+        <article class="featured-project reveal" data-project-slug="cantilever-assembly-instructions"><div class="project-visual thumbnail-docs"><i>≡</i><small>PROJECT VISUAL IN PREPARATION</small></div><div class="project-body"><div class="project-meta"><span>Assembly Documentation</span><b>Rebuild project</b></div><h3>Cantilever Assembly Instructions Rebuild</h3><p>Reworked assembly documentation using reusable renders, exploded views, and a clearer installation sequence.</p><div class="technology-list"><span>Technical rendering</span><span>Exploded views</span><span>Layout systems</span><span>Assembly logic</span></div><div class="case-study-state">Case study in preparation <b>↗</b></div></div></article>
       </div>
     </section>
 
+    <section id="case-studies" class="page case-studies-section" aria-labelledby="case-studies-title" hidden>
+      <div class="section-head"><p class="eyebrow"><span></span> In detail</p><h2 id="case-studies-title">Case<br><em>Studies.</em></h2><div class="section-intro"><p>Selected engineering projects, workflows, and tools explained in detail.</p></div></div>
+      <div class="case-studies-grid">
+        <a class="case-study-card" href="case-studies/pallet-rack-builder.html"><span>Interactive Engineering Tool</span><h3>Pallet Rack Builder</h3><p>Project context, engineering decisions, workflow, and implementation details will be added here.</p><small>Case study coming soon</small></a>
+        <a class="case-study-card" href="case-studies/rack-sign-generator.html"><span>CAD Automation</span><h3>Rack Sign Generator</h3><p>Project context, source data, automation logic, and document outputs will be added here.</p><small>Case study coming soon</small></a>
+        <a class="case-study-card" href="case-studies/product-animation-pipeline.html"><span>Technical Visualization</span><h3>Product Animation Pipeline</h3><p>Project context, production workflow, visual process, and final outputs will be added here.</p><small>Case study coming soon</small></a>
+      </div>
+    </section>
+    <section id="articles" hidden><h2>Articles</h2></section>
+    <section id="technical-notes" hidden><h2>Technical Notes</h2></section>
+    <section id="experiments" hidden><h2>Experiments</h2></section>
+
     <section id="about" class="page" aria-labelledby="about-title">
       <div class="about-grid">
-        <div class="about-copy reveal"><p class="eyebrow"><span></span> About · Kyiv, Ukraine</p><h2 id="about-title">Engineering,<br><em>made clearer.</em></h2><p class="large">I’m Misha Slipych, a Material Handling Engineer from Kyiv, Ukraine, working at the intersection of engineering, visualization, and automation.</p><p>My work combines material handling knowledge with CAD workflows, technical visuals, and practical engineering tools—making technical information easier to communicate, understand, and use.</p><div class="focus-statement"><span>FOCUS</span><p>Building tools that make engineering easier to understand and use.</p></div></div>
-        <div class="portrait reveal"><div class="portrait-inner"><span>MS</span><div class="orbit"></div></div><p>Kyiv, Ukraine<br>Engineering · Visualization · Automation</p></div>
+        <div class="about-copy reveal"><p class="eyebrow"><span></span> About · Kyiv, Ukraine</p><h2 id="about-title">Engineering,<br><em>made clearer.</em></h2><p class="large">I’m Misha Slipych, a Material Handling Engineer working at the intersection of engineering, visualization, and automation.</p><p>I work with warehouse racking, CAD workflows, interactive configurators, product animation, and assembly documentation. The common thread is practical: turn engineering knowledge into tools and visuals that make complex systems easier to understand and use.</p><div class="focus-statement"><span>APPROACH</span><p>Building tools that make engineering easier to understand and use.</p></div></div>
+        <div class="portrait reveal"><div id="about-visual" class="portrait-inner"><span>MS</span><div class="orbit"></div></div><p>Kyiv, Ukraine<br>Engineering · Visualization · Automation</p></div>
       </div>
       <div class="expertise reveal"><p>FOCUS AREAS</p><div><span>Material handling</span><span>CAD automation</span><span>Technical visualization</span><span>Engineering tools</span><span>Product animation</span><span>Assembly documentation</span></div></div>
     </section>
 
     <section id="contact" class="page" aria-labelledby="contact-title">
-      <div class="contact-wrap reveal"><p class="eyebrow"><span></span> Contact</p><h2 id="contact-title">Let’s build<br><em>something useful.</em></h2><p>For material handling, CAD automation, technical visualization, or engineering tool projects.</p><div class="contact-directory contact-placeholders"><div><span>Email</span><strong><a href="mailto:hello@mishaslipych.com">hello@mishaslipych.com</a></strong></div><div><span>LinkedIn</span><strong><a href="https://linkedin.com/in/mishaslipych" target="_blank" rel="noreferrer">linkedin.com/in/mishaslipych</a></strong></div><button class="resume-button" type="button" disabled>Resume coming soon</button></div></div>
-      <footer><div class="brand"><span>MS</span><strong>Misha Slipych</strong></div><p>Engineering. Visualization. Automation.</p><p>© 2026 · Kyiv, Ukraine</p></footer>
+      <div class="contact-wrap reveal"><p class="eyebrow"><span></span> Contact</p><h2 id="contact-title">Let’s discuss<br><em>the engineering.</em></h2><p>Material handling systems, CAD automation, technical visualization, engineering tools, and related roles.</p><div class="contact-directory contact-placeholders"><div><span>Email</span><strong><a href="mailto:hello@mishaslipych.com">hello@mishaslipych.com</a></strong></div><div><span>LinkedIn</span><strong><a href="https://linkedin.com/in/mishaslipych" target="_blank" rel="noreferrer">linkedin.com/in/mishaslipych</a></strong></div><button id="resume-button" class="resume-button" type="button" disabled>Resume available on request</button></div></div>
+      <footer><div class="brand"><span>MS</span><strong>Misha Slipych</strong></div><p><a href="#home">Engineering. Visualization. Automation.</a></p><p>© 2026 · Kyiv, Ukraine</p></footer>
     </section>
   </main>
 </body>
