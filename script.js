@@ -31,6 +31,9 @@ function configureHeroMedia() {
   if (!heroMedia || !HERO_MEDIA_SRC) return;
   if (HERO_MEDIA_TYPE === 'image') {
     heroMedia.src = HERO_MEDIA_SRC;
+    heroMedia.loading = 'eager';
+    heroMedia.decoding = 'async';
+    heroMedia.fetchPriority = 'high';
     return;
   }
   if (HERO_MEDIA_TYPE === 'video') {
@@ -56,6 +59,8 @@ function configureAboutVisual() {
     image.src = ABOUT_VISUAL_SRC;
     image.alt = ABOUT_VISUAL_TYPE === 'logo' ? 'Misha Slipych logo' : 'Misha Slipych';
     image.className = `about-${ABOUT_VISUAL_TYPE}`;
+    image.loading = 'lazy';
+    image.decoding = 'async';
     aboutVisual.append(image);
   }
   if (ABOUT_VISUAL_TYPE === 'video') {
@@ -92,6 +97,13 @@ menuButton.addEventListener('click', event => {
   event.currentTarget.setAttribute('aria-expanded', String(open));
 });
 
+document.addEventListener('keydown', event => {
+  if (event.key !== 'Escape' || !nav.classList.contains('open')) return;
+  nav.classList.remove('open');
+  menuButton.setAttribute('aria-expanded', 'false');
+  menuButton.focus();
+});
+
 const observer = new IntersectionObserver(entries => {
   const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio);
   if (visible[0]) setActiveSection(visible[0].target.id);
@@ -102,7 +114,10 @@ setActiveSection(location.hash.slice(1) || 'home');
 
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'light') document.body.classList.remove('dark');
+themeButton.setAttribute('aria-pressed', String(document.body.classList.contains('dark')));
 themeButton.addEventListener('click', () => {
   document.body.classList.toggle('dark');
-  localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+  const darkModeEnabled = document.body.classList.contains('dark');
+  themeButton.setAttribute('aria-pressed', String(darkModeEnabled));
+  localStorage.setItem('theme', darkModeEnabled ? 'dark' : 'light');
 });

@@ -1,0 +1,29 @@
+{
+  "name": "Misha Slipych — Engineering Portfolio",
+  "short_name": "Misha Slipych",
+  "description": "Material Handling Engineer specializing in engineering visualization, CAD automation, interactive engineering tools, and warehouse systems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#151714",
+  "theme_color": "#151714",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
