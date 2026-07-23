@@ -1,0 +1,24 @@
+{
+  "name": "mishaslipych-portfolio",
+  "version": "1.0.0",
+  "description": "Misha Slipych Engineering Portfolio Website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx http-server -p 3000",
+    "preview": "npx http-server -p 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "engineering",
+    "material-handling",
+    "cad-automation",
+    "visualization"
+  ],
+  "author": "Misha Slipych",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  },
+  "devDependencies": {}
+}
